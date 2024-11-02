@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Web Page</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/coin32.gif">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/coin16.gif">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/coin32.gif">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/coin16.gif">
     <link rel="prefetch" href="assets/cursor-20.png" />
-    <link rel="prefetch" href="assets/cursor-pointer-20.png" />
-    <link rel="prefetch" href="assets/cursor-text-20.png" />
+    <link rel="prefetch" href="../assets/cursor-pointer-20.png" />
+    <link rel="prefetch" href="../assets/cursor-text-20.png" />
     <style>
                 /* Updated Helper Styles */
         .center-gif, .lower-gif {
@@ -27,6 +27,8 @@
     		.center-gif img, .lower-gif img {
         	width: 90%; /* Adjusts the width to fit the screen with some padding */
     	}
+    }
+    
 
 	.helper {
             position: fixed;
@@ -228,7 +230,7 @@
             border-radius: 10px;
             background-color: transparent;
             transition: all 0.3s ease;
-            cursor: url('assets/cursor-pointer-20.png'), pointer;
+            cursor: url('../assets/cursor-pointer-20.png'), pointer;
             position: relative;
             overflow: hidden;
         }
@@ -430,32 +432,32 @@
     </div>
 
     <nav class="menu">
-        <a href="about.html" class="menu-item">About</a>
-        <a href="projects.html" class="menu-item">Projects</a>
-        <a href="contact.html" class="menu-item">Contact</a>
+        <a href="/about/" class="menu-item">About</a>
+        <a href="/projects/" class="menu-item">Projects</a>
+        <a href="/contact/" class="menu-item">Contact</a>
         <a href="#mindmap" class="menu-item">Mindmap</a>
     </nav>
 
     <div class="welcome-container">
-        <img src="assets/torch.gif" alt="Fire torch" class="gif-style">
+        <img src="../assets/torch.gif" alt="Fire torch" class="gif-style">
         <div class="welcome-text">WELCOME!</div>
-        <img src="assets/torch.gif" alt="Fire torch" class="gif-style">
+        <img src="../assets/torch.gif" alt="Fire torch" class="gif-style">
     </div>
 
     <div class="separator">-+-+-+-+-+-+-+-</div>
 
     <div class="center-gif">
-        <img src="assets/central2.gif" alt="Center GIF" style="width: 580px; height: auto;">
+        <img src="../assets/central2.gif" alt="Center GIF" style="width: 580px; height: auto;">
     </div>
     
     <div class="lower-gif">
-        <img src="assets/cold-as.gif" alt="Lower GIF" style="width: auto; height: auto;">
+        <img src="../assets/cold-as.gif" alt="Lower GIF" style="width: auto; height: auto;">
     </div>
     
 
     <div class="helper" id="helper">
         <div class="helper-header">
-            <img src="assets/helper.png" alt="Helper Icon" style="width: 70px; height: 70px" class="helper-icon">
+            <img src="../assets/helper.png" alt="Helper Icon" style="width: 70px; height: 70px" class="helper-icon">
             <span class="helper-close" onclick="toggleHelper()">✖</span>
         </div>
         <div class="helper-content">
