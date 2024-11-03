@@ -127,6 +127,30 @@
     box-sizing: border-box; /* Ensure padding and border are included in total width and height */
 }
 
+/* Media query for devices with width up to 768px */
+@media (max-width: 768px) {
+    nav.menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Adjust spacing between buttons */
+    }
+
+    .menu-item {
+        font-size: 20px; /* Smaller font size */
+        padding: 8px 12px; /* Smaller padding */
+        width: 80%; /* Ensure buttons don't exceed screen width */
+        text-align: center;
+    }
+}
+
+/* Media query for very small devices (up to 480px) */
+@media (max-width: 480px) {
+    .menu-item {
+        font-size: 18px; /* Further reduced font size */
+        padding: 6px 10px; /* Even smaller padding */
+        width: 90%; /* Buttons take up more screen space */
+    }
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
