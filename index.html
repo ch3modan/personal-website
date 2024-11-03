@@ -226,17 +226,19 @@
             text-shadow: 0 0 5px #ff0000, 0 0 10px #00ffff;
         }
 
-        .welcome-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
 
-        .welcome-text {
-            font-size: 64px;
-            animation: glitch 1s infinite;
-        }
+	.welcome-container {
+    	      display: flex;
+    	      align-items: center;
+    	      justify-content: center;
+    	      gap: 10px; /* Space between elements */
+    	      flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+	}
+
+	.welcome-text {
+    	       font-size: 48px; /* Adjust as needed */
+    	       text-align: center;
+	}
 
 	.gif-style {
     		width: 80px;
