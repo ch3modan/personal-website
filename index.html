@@ -238,10 +238,23 @@
             animation: glitch 1s infinite;
         }
 
-        .gif-style {
-            width: 80px;
-            height: auto;
-        }
+	.gif-style {
+    		width: 80px;
+    		height: auto;
+	}
+
+/* Media query for smaller devices */
+	@media (max-width: 768px) {
+    		.gif-style {
+        		width: 60px; /* Reduce the width for better fit on smaller screens */
+    		}
+	}
+
+	@media (max-width: 480px) {
+    		.gif-style {
+        		width: 40px; /* Further reduce the size for very small screens */
+    		}
+	}
 
         @keyframes glitch {
             0% { text-shadow: 2px 2px #ff0000; }
