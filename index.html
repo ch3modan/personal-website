@@ -123,16 +123,20 @@
 
         /* ... (keep rest of the existing styles) ... */
 
-        body {
-    background-image: url('../assets/brick_1.png'), auto;
-    background-color: #cccccc;
-    font-family: 'Luminari', sans-serif;
-    cursor: url('../assets/cursor-20.png'), auto;
-    margin: 0;
-    padding: 20px;
-    color: #39ff14;
-    box-sizing: border-box; /* Ensure padding and border are included in total width and height */
-}
+	body {
+    	    background-image: url('../assets/brick_1.png');
+            background-repeat: repeat; /* This makes the image repeat to fill the space */
+            background-color: #cccccc; /* Fallback color if image fails to load */
+	    background-size: auto; /* or specific size like '200px' or 'cover' */
+            background-position: center; /* centers the image */
+            background-attachment: fixed; /
+            font-family: 'Luminari', sans-serif;
+            cursor: url('../assets/cursor-20.png'), auto;
+            margin: 0;
+            padding: 20px;
+            color: #39ff14;
+            box-sizing: border-box;
+        }
 
 /* Media query for devices with width up to 768px */
 @media (max-width: 768px) {
